@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Resgister = () => {
   return (
@@ -17,7 +18,7 @@ const Resgister = () => {
             <label className="form-label">Confirm Password</label>
             <input type="password" className="form-control mb-3" placeholder="Confirm Password" />
             <button className="btn btn-primary w-100">Register</button>
-            <p className="text-center m-0 mt-3">Already have an account? <a href="">Login</a></p>
+            <p className="text-center m-0 mt-3">Already have an account? <Link to={"/login"}>Login</Link></p>
         </form>
     </div>
   );
