@@ -4,7 +4,7 @@ import Navbar from "../layouts/Navbar";
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <h1 className="text-center">Home</h1>
     </div>
   );
 };
