@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import CartItem from "../components/CartItem";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -58,14 +59,19 @@ const Navbar = () => {
       </div>
       <div
         style={{
-          width: "400px",
+          width: "600px",
           height: "91.5vh",
-          right: show ? "0px" : "-400px",
+          right: show ? "0px" : "-600px",
           top: "62px",
           transition: "all .4s ease",
         }}
-        className="position-fixed bg-danger"
-      ></div>
+        className="z-3 position-fixed bg-light border p-3"
+      >
+        <h4>Cart Item</h4>
+        <div className="">
+          <CartItem />
+        </div>
+      </div>
     </div>
   );
 };
